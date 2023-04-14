@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>ServletThread</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ThreadExample</display-name>
+    <servlet-name>ThreadExample</servlet-name>
+    <servlet-class>it.simo.servlet.thread.ThreadExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ThreadExample</servlet-name>
+    <url-pattern>/ThreadExample</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ThreadSincro</display-name>
+    <servlet-name>ThreadSincro</servlet-name>
+    <servlet-class>it.simo.thread.sincro.ThreadSincro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ThreadSincro</servlet-name>
+    <url-pattern>/ThreadSincro</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ThreadSingle</display-name>
+    <servlet-name>ThreadSingle</servlet-name>
+    <servlet-class>it.simo.thread.single.ThreadSingle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ThreadSingle</servlet-name>
+    <url-pattern>/ThreadSingle</url-pattern>
+  </servlet-mapping>
+</web-app>
